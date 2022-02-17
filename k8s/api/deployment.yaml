@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: ruffab/api-bootcamp-produto:v2
+          image: ruffab/api-bootcamp-produto:{{tag}}
           ports:
           - containerPort: 8080
           env:
