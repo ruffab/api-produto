@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: ruffab/api-produto:"{{tag}}"
+          image: ruffab/api-produto:{{tag}}
           ports:
           - containerPort: 8080
           env:
@@ -36,9 +36,9 @@ spec:
       nodePort: 30000
   type: NodePort
   
-  ---
+---
   
-  apiVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mongodb
